@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+header{
+    margin: 15px auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .title{
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header img{
+    width: 5rem;
+    margin-top: 20px;
+}
+
+/* start boxs  */
+.links .boxs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 50vh;
+    margin: 50px;
+}
+.links .boxs .box{
+    position: relative;
+    padding: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.9s;
+    margin-top: 10px;
+}
+
+.links .boxs .box a{
+    position: absolute;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.links .boxs .facebook {
+    border: 2px solid #3b5998;
+}
+.links .boxs .facebook:hover {
+    border: 2px dashed #3b5998;
+}
+.links .boxs .facebook:hover .title{
+    opacity: 1;
+}
+.links .boxs .facebook a{
+    color: #3b5998;
+}
+
+.links .boxs .instagram {
+    border: 2px solid #FD1D1D;
+}
+.links .boxs .instagram:hover {
+    border: 2px dashed #FD1D1D;
+}
+.links .boxs .instagram:hover .title{
+    opacity: 1;
+}
+.links .boxs .instagram a{
+    color: #FD1D1D;
+}
+
+.links .boxs .tiktok {
+    border: 2px solid black;
+}
+.links .boxs .tiktok:hover {
+    border: 2px dashed black;
+}
+.links .boxs .tiktok:hover .title{
+    opacity: 1;
+}
+.links .boxs .tiktok a{
+    color: black;
+}
+
+.links .boxs .box .title{
+    position: relative;
+    top: -80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+
+@media (max-width: 768px) {
+    .links .boxs{
+        position: relative;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
